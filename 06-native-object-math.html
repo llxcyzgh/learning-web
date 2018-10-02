@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/common.js"></script>
+    <script>
+        getCurrentFileName();
+        
+        // Math 对象的方法为静态方法,使用 Math. 来启用
+        console.log(Math.abs(-99));// 求绝对值
+        console.log(Math.max(-99,99,0));// 求最大、最小值
+        console.log(Math.min(-99,99,0));// 求最大、最小值
+
+        console.log(Math.ceil(12.5));// 向上、向下取整,『变大、变小取整』
+        console.log(Math.ceil(-12.5));// 向上、向下取整
+        console.log(Math.floor(-12.5));// 向上、向下取整
+
+        console.log(Math.round(12.5));// 四舍五入取整
+        console.log((12.45).toFixed());// 四舍五入取整,『这是number对象方法』
+
+        console.log(Math.random());// 取 0~1 之间随机数
+        console.log(Math.floor(Math.random()*2+1));// 取 1~2 之间随机整数
+        console.log(Math.floor(Math.random()*3+10));// 取 10,11,12 之间随机整数
+
+        // 要取 m~n 之间的随机数, 若 n 取不到, 则 Math.floor(Math.random()*(m-n)+m)
+        // 要取 m~n 之间的随机数, 若 n 取到, 则 Math.floor(Math.random()*(m-n+1)+m)
+
+        console.log(Math.pow(2,3));// 取幂
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

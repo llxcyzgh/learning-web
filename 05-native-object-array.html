@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/common.js"></script>
+    <script>
+        getCurrentFileName();
+        var arr = ['red', 'orange', 'yellow', 'green', 'purple', 'blue'];
+
+        var arr2 = ['peppa', 'geroge'];
+
+        console.log(arr.length); // 长度
+
+        console.log(arr.concat(arr2)); // 连接两个数组
+
+        console.log(arr.join()); // 连接1个数组为字符串
+        console.log(arr.join('_')); // 连接1个数组为字符串
+
+        console.log(arr.unshift('hello')); // 从数组首尾添加元素,返回添加后的长度,『会改变原数组』
+        console.log(arr.push('world')); // 从数组首尾添加元素,返回添加后的长度,『会改变原数组』
+        console.log(arr.join());
+
+        console.log(arr.shift()); // 从数组首尾删除元素,返回被删除的元素,『会改变原数组』
+        console.log(arr.pop()); // 从数组首尾删除元素,返回被删除的元素,『会改变原数组』
+        console.log(arr.join());
+
+
+        console.log(arrx = arr.slice(0, 2)); // 从数组中提取元素作为新的数组,返回新的数组,『不改变原数组』
+
+        console.log(arr.splice(0, 2, 'abc')); // 从数组中删除元素(同时可加入元素),返回被删除的元素,『会改变原数组』; 第1个参数是要删除的位置,第2个参数是要删除的元素个数,第3个及以后参数是要加入的元素
+        console.log(arr);
+
+        var arr3 = ['he', 'she', 'me'];
+        console.log(arr3.sort()); // 数组排序,『会改变原数组』
+        console.log(arr3);
+
+        console.log(arr.reverse()); // 数组翻转,『会改变原数组』
+        console.log(arr);
+
+        console.log(arr.indexOf('green')); // 查找指定元素在数组中的位置,不存在则返回-1
+        console.log(arr.lastIndexOf('0'));
+
+
+        console.log(arr.map(function ($v, $k) {
+            return $k + '-' + $v;
+        })); // 迭代数组,『不改变原数组』
+        console.log(arr);
+
+        console.log(arr.toString());// 效果等同于 join(),join(',')
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

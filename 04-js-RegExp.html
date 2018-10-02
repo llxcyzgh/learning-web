@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/common.js"></script>
+    <script>
+        getCurrentFileName();
+        var str = "Hello world,today is November 2th";
+
+        // 创建 RegExp 的两种方式
+        var myRegExp1 = /\W/;
+        // var myRegExp2 = new RegExp("[A-Z]");
+        var myRegExp2 = /[A-Z]/g;
+
+        console.log(str.split(myRegExp1));
+
+        console.log(str.replace(myRegExp2,'-'));
+
+        console.log(str.search(myRegExp2));
+        console.log(str.match(myRegExp2));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

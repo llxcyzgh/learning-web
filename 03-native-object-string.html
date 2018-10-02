@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/common.js"></script>
+    <script>
+        getCurrentFileName();
+        var str = "Hello world, today is November 2th";
+
+        console.log(str.length); // 长度
+
+        console.log(str.indexOf("H")); // 指定字符所在位置, 从 0 开始
+        console.log(str.lastIndexOf("t")); // 指定字符所在位置, 从 0 开始
+
+        console.log(str.substr(6, 5)); // 字符串截取,从0到4,输出hello, 第1个参数是开始的位置,第二个参数是长度, 不推荐使用
+        console.log(str.substring(6, 11)); // 字符串截取,从0到4,输出hello,第1个参数是开始的位置,第二个参数是结束的位置
+        console.log(str.slice(-2, -1)); // 字符串截取,从0到4,输出hello,第1个参数是开始的位置,第二个参数是结束的位置, 可以是负数
+
+        console.log(str.toLocaleLowerCase()); // 大小写转换
+        console.log(str.toLowerCase()); // 大小写转换
+        console.log(str.toLocaleUpperCase()); // 大小写转换
+        console.log(str.toUpperCase()); // 大小写转换
+
+        console.log(str.charAt(1)); // 按下标找字符
+        console.log(str.charCodeAt(1)); // 先找到字符,然后找到字符所在ascii的下标
+
+        console.log(String.fromCharCode(101)); // 按ascii的下标找字符
+
+        console.log(str2 = ' 123 '); // 删除首尾空白字符
+        console.log(str2.trim()); // 删除首尾空白字符
+
+        console.log(str.split(' '));// 字符串分割成数组
+
+        console.log(str.replace('world','peppa'));// 字符串替换
+
+        console.log(str.search('H'));// 字符串查找(不使用正则时,效果等同于 indexOf())
+        console.log(str.match('H'));// 字符串查找(不使用正则时,效果类似于 search(), match() 返回的是数组, seach() 返回的是下标)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
